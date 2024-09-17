@@ -22,6 +22,7 @@ def etapaDeLaVida():
     menores = 0
     por_adulto = 0
     etapa = ""
+    vocales = "aeiouAEIOU"
 
     
 
@@ -55,13 +56,21 @@ def etapaDeLaVida():
 
 
 
-        lista_usu = lista_usu + "Nombre:" + nombre +"Edad:" + str(edad) + "Etapa:" + etapa + "\n"
+        lista_usu = lista_usu + "Nombre:" + nombre +" Edad:" + str(edad) + " Etapa:" + etapa + "\n"
+
+        cant_vocal = nombre.count("a","e","i","o","u","A","E","I","O","U")
+
+
+
+
+
 
     print(lista_usu)
         
     print("La cantidad de encuestados mayores es:",mayores)
     print("El porcentaje de encuestados menores es:",por_menores,"%")
     print("El porcentaje de adultos es:",promedio,"%")
+    print("La cantidad de encuestado que tiene vocales en su nombre es:", cant_vocal)
 
 
 etapaDeLaVida()
